@@ -1,0 +1,9 @@
+Building tattoocoin
+
+See doc/readme-qt.rst for instructions on building tattoocoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of tattoocoin.
+
+See doc/build-*.txt for instructions on building tattoocoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of tattoocoin.
