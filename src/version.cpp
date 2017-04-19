@@ -36,8 +36,8 @@ const std::string CLIENT_NAME("Tattoocoin");
 // git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#    define GIT_COMMIT_ID "YYYYX"
-#    define GIT_COMMIT_DATE "Apr 10, 2017" // Broken: $Format:%cD [for now build date is manual input]
+#    define GIT_COMMIT_ID "YYYYY"
+#    define GIT_COMMIT_DATE "Apr 17, 2017" // Broken: $Format:%cD [for now build date is manual input]
                                            // TODO: Fix git commit date to correctly capture build time
 #endif
 

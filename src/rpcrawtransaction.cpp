@@ -260,6 +260,23 @@ Value createrawtransaction(const Array& params, bool fHelp)
         if (!address.IsValid())
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid tattoocoin address: ")+s.name_);
 
+        // Velocity style check
+        // Hard check ensures only valid addresses are ever allowed on TCLNet
+        if (fTCLNet)
+        {
+            string checkAddress = address.ToString();
+            if (checkAddress[0] != 't')
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "PEBCAK: Invalid TLE address");
+        }
+        // Velocity style check
+        // Hard check ensures only valid addresses are ever allowed on MainNet
+        if (!fTCLNet)
+        {
+            string checkAddress = address.ToString();
+            if (checkAddress[0] != 'T')
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "PEBCAK: Invalid TSE address");
+        }
+
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+s.name_);
         setAddress.insert(address);

@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = tattoocoin-qt
 macx:TARGET = "tattoocoin-qt"
-VERSION = 1.2.1.1
+VERSION = 1.2.1.2
 INCLUDEPATH += src src/json src/qt
 QT += core gui widgets network printsupport
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE

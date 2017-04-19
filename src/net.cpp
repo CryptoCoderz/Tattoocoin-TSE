@@ -1235,6 +1235,8 @@ void MapPort()
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeedTCL[][2] = {
     {"Node1.thecryptochat.net", "195.74.52.227"},
+    {"Node2.thecryptochat.net", "149.56.154.65"},
+    // {"Node3", "88.99.81.71"},
 };
 static const char *strDNSSeed[][2] = {
     {"Node1.thecryptochat.net", "91.134.120.210"},

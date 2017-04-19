@@ -30,7 +30,7 @@ static const int DATABASE_VERSION = 70509;
 // network protocol versioning
 //
 
-static const int PROTOCOL_VERSION = 60019;
+static const int PROTOCOL_VERSION = 60020;
 
 // intial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
@@ -38,7 +38,7 @@ static const int INIT_PROTO_VERSION = 209;
 // disconnect from peers older than this proto version
 static const int MIN_PEER_PROTO_VERSION = 60013;
 // TCLNet
-static const int MIN_PEER_PROTO_VERSION_LE = 60017;
+static const int MIN_PEER_PROTO_VERSION_LE = 60018;
 
 // nTime field added to CAddress, starting with this version;
 // if possible, avoid requesting addresses nodes older than this
@@ -49,7 +49,7 @@ static const int NOBLKS_VERSION_START = 0;
 static const int NOBLKS_VERSION_END = 60012;
 // TCLNet
 static const int NOBLKS_VERSION_START_LE = 0;
-static const int NOBLKS_VERSION_END_LE = 60016;
+static const int NOBLKS_VERSION_END_LE = 60017;
 
 // BIP 0031, pong message, is enabled for all versions AFTER this one
 static const int BIP0031_VERSION = 60000;
